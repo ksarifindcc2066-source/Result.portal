@@ -1,0 +1,57 @@
+function searchResult(){
+
+let reg=document.getElementById("regNo").value.trim();
+
+let result=document.getElementById("result");
+
+if(reg==="2013213"){
+
+result.innerHTML=`
+
+<div class="result-box">
+
+<h2>Result Details</h2>
+
+<p><strong>Registration Number:</strong> 2013213</p>
+
+<p><strong>Student Name:</strong> Kazi Mumtahina Jannat</p>
+
+<p><strong>Exam:</strong> Model Test</p>
+
+<p><strong>Subject:</strong> Science</p>
+
+<p><strong>Chapter:</strong> 14</p>
+
+<p><strong>Date:</strong> 31-07-2026</p>
+
+<p><strong>Result:</strong>
+<span class="pass">PASS</span></p>
+
+<p><strong>GPA:</strong> 5.00</p>
+
+<p><strong>Total Marks:</strong> 40</p>
+
+<p><strong>Obtained Marks:</strong> 32</p>
+
+</div>
+
+`;
+
+}
+else{
+
+result.innerHTML=`
+
+<div class="result-box">
+
+<h2>No Result Found</h2>
+
+<p>Please check your Registration Number and try again.</p>
+
+</div>
+
+`;
+
+}
+
+}
