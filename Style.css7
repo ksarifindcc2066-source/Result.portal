@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f2f5f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:500px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+h1{
+    text-align:center;
+    color:#1b4f9c;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin:10px 0 25px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#1b4f9c;
+}
+
+button{
+    width:100%;
+    margin-top:15px;
+    padding:14px;
+    border:none;
+    background:#1b4f9c;
+    color:white;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#143d7d;
+}
+
+.result-box{
+    margin-top:25px;
+    background:#eef6ff;
+    border-left:5px solid #1b4f9c;
+    padding:20px;
+    border-radius:10px;
+}
+
+.result-box h2{
+    margin-bottom:15px;
+    color:#1b4f9c;
+}
+
+.result-box p{
+    margin:8px 0;
+    font-size:16px;
+}
+
+.pass{
+    color:green;
+    font-weight:bold;
+}
+
+.fail{
+    color:red;
+    font-weight:bold;
+}
+
+@media(max-width:500px){
+
+.card{
+padding:20px;
+}
+
+h1{
+font-size:28px;
+}
+
+button{
+font-size:16px;
+}
+
+}
